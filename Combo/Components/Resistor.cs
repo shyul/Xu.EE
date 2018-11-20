@@ -21,7 +21,7 @@ namespace Combo
     }
 
     [DesignerCategory("Code")]
-    public class Resistor : Component
+    public class Resistor : EEComponent
     {
     }
 }

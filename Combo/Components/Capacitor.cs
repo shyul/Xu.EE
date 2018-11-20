@@ -20,15 +20,18 @@ namespace Combo
 
     }
 
-    public class Capacitor : Component
+    public class Capacitor : EEComponent
     {
         // in pF / pico F
         public double Capacitance { get; private set; }
-        public double Voltage { get; private set; }
-        public double Tolerance { get; private set; }
-        public string Material { get; private set; }
-
         public override string Comment => Converstion.CapacitanceToString(Capacitance);
+
+        public double Size { get; private set; } // 01005, 0201, 0402, 0603, 0805, 1206, 1210 ...
+        public double Voltage { get; private set; } // 4V, 6.3V, 10V, 16V, 25V, 50V, 100V
+        public double Tolerance { get; private set; } // 0.1pF, 0.2pF, 1%, 2%, 5%
+        public string Material { get; private set; } // X5R, X7R, C0G
+
+
 
         public override string Description
         {
@@ -37,6 +40,12 @@ namespace Combo
             }
         }
 
+        public static List<string> TagList = new List<string>()
+        {
+            "AEC-Q100",
+            "Space Grade",
+            "Military Grade",
+        };
     }
 
     public class CapacitorMuRata : Capacitor
