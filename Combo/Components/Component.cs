@@ -7,10 +7,23 @@ using System.Threading.Tasks;
 
 namespace Combo
 {
-    [DesignerCategory("Code")]
-    public class EEComponent : IEquatable<EEComponent>
+    /*
+    public class PCBComponent
     {
-        public EEComponent()
+        public string Designator;
+        public string Footprint;
+        public string FootprintPath;
+        public string FootprintRef;
+        public string Type;
+        public string Simulation;
+        public string PartNumber;
+        public string Description;
+    }*/
+
+    [DesignerCategory("Code")]
+    public abstract class PCBComponent : IEquatable<PCBComponent>
+    {
+        public PCBComponent()
         {
             TempLow = 4;
             TempHigh = 40;
@@ -28,15 +41,16 @@ namespace Combo
         public virtual HashSet<string> Tags { get; private set; }
 
         public virtual string SchematicSymbol { get; private set; }
-        public virtual string SchematicLibraryPath { get; private set; }
+        public virtual string SchematicLibPath { get; private set; }
         public virtual string Designator { get; private set; }
 
         public virtual string Footprint { get; private set; }
-        public virtual string FootprintLibrarPath { get; private set; }
+        public virtual string FootprintLibPath { get; private set; }
         public virtual bool IsSMT { get; private set; }
         public virtual string IsSMTString => IsSMT ? "SMD" : "TH";
 
-        public bool Equals(EEComponent other) => (GetType() == other.GetType()) && (GetHashCode() == other.GetHashCode());
+        public bool Equals(PCBComponent other) => (GetHashCode() == other.GetHashCode());
+        public override bool Equals(object other) => (GetType() == other.GetType()) && (GetHashCode() == other.GetHashCode());
         public override int GetHashCode() => Vendor.GetHashCode() ^ PartNumber.GetHashCode();
     }
 

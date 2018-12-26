@@ -20,7 +20,7 @@ namespace Combo
 
     }
 
-    public class Capacitor : EEComponent
+    public class Capacitor : PCBComponent
     {
         // in pF / pico F
         public double Capacitance { get; private set; }

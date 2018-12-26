@@ -49,6 +49,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessDB.cs" />
+    <Compile Include="AccessDB.Designer.cs">
+      <DependentUpon>AccessDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Components\Capacitor.cs" />
     <Compile Include="Components\Component.cs" />
     <Compile Include="Components\Resistor.cs" />
