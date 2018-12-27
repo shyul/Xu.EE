@@ -40,13 +40,14 @@ namespace Combo
             }
         }
 
-        public static List<string> TagList = new List<string>()
-        {
-            "AEC-Q100",
-            "Space Grade",
-            "Military Grade",
-        };
+
     }
+
+
+
+
+
+
 
     public class CapacitorMuRata : Capacitor
     {
