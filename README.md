@@ -1,5 +1,8 @@
-# combo
-Minimize the IT technology - the head count of Alitum hardware engineer who design from scratch is below 10 in the organization. No need for infrastructure so far. Storage the part information locally, no server needed.
+# Xu.EE
+
+EE tools
+
+- Altium Library Creation Tool
 
 Why Access Database
 1. Suppported by Altium
