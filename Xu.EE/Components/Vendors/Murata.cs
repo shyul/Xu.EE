@@ -16,11 +16,11 @@ namespace Xu.EE
 {
     public static class Murata
     {
-        public static void ImportAll(string fileName)
+        public static void ImportAll()
         {
             BuildPartNumberWithSim(@"C:\Users\shyul\OneDrive - Facebook\Projects\Altium\Library\Basic\Simulation\Murata");
 
-            Dictionary<string, DataTable> ds = InitiateEmptyTables();
+            //Dictionary<string, DataTable> ds = InitiateEmptyTables();
 
             string filePath = @"C:\Users\shyul\OneDrive - Facebook\Projects\Altium\Tools\Components\capacitor_murata\";
             string[] files = new string[] { "GRM", "GJM", "GQM", "GCM", "GCQ" };
@@ -36,6 +36,8 @@ namespace Xu.EE
 
                     if (isValid)
                     {
+                        ComponentList.Capacitors.InsertCmp(c);
+                        /*
                         if (!ds.Keys.Contains(c.TableName)) ds.Add(c.TableName, AccessDb.GetTable(c.TableName));
                         DataTable dt = ds[c.TableName];
                         if (!dt.Rows.Contains(c.Name))
@@ -55,7 +57,7 @@ namespace Xu.EE
 
                             Console.WriteLine(l);// + dt.Rows[c.Name]["Mfg PN"]);
                         }
-
+                        */
                     }
                 }
             }
@@ -67,7 +69,7 @@ namespace Xu.EE
             }
             Console.WriteLine("\n");
 
-            AccessDb.WriteToFile(ds, fileName);
+            //AccessDb.WriteToFile(ds, fileName);
         }
 
         public static HashSet<string> StandardPackages = new HashSet<string>()

@@ -12,8 +12,11 @@ namespace AltiumLib
     {
         static void Main(string[] args)
         {
-            KOASpeer.InitiateAll(@"E:\Basic.accdb");
-            Murata.ImportAll(@"E:\Basic.accdb");
+            KOASpeer.InitiateAll();
+            Murata.ImportAll();
+            ComponentList.WriteToFile(@"E:\Basic.accdb");
+
+            Console.ReadKey();
         }
     }
 }

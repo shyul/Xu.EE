@@ -146,7 +146,7 @@ namespace Xu.EE
                         conn.PrepareTable(dts);
                         conn.InsertTable(dts);
 
-                        Console.WriteLine("\n\ndoing good.");
+                        Console.WriteLine("\ndoing good.\n\n");
                     }
                     catch (Exception ex)
                     {

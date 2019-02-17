@@ -8,6 +8,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,70 +16,77 @@ namespace Xu.EE
 {
     public static class KOASpeer
     {
-        public static void InitiateAll(string fileName)
+        public static void InitiateAll()
         {
-            Dictionary<string, DataTable> ds = InitiateEmptyTables();
-            RK73H_Generator(ds);
-            AccessDb.WriteToFile(ds, fileName);
+            InitiateEmptyTables();
+            RK73H_Generator();
         }
 
         public static DataTable InitiateEmptyTable(string packageCode)
         {
-            string packageName = Packages[packageCode].pakageName;
+            string packageName = Packages[packageCode].packageName;
             DataTable dt = AccessDb.GetTable("Resistor - " + packageName);
             dt.Rows.Add(new object[] { "NC_" + packageName, "N/A", "NC", "1/GMIN", packageName, "RES,SM," + packageName + ",NO POP/DEBUG/PLACE HOLDER", "N/A", "N/A",
                 "RESISTOR", @"Basic\Basic.SchLib", packageName +"_NC", @"Basic\Resistor.PcbLib",
                 "Ideal Simulation Data", "General", "Resistor", "X", string.Empty, "(1:1),(2:2)", string.Empty, "Ideal" });
-            dt.Rows.Add(new object[] { "0R_" + Packages[packageCode].current + "A", "210-000000A-01", "0R", "0.05", packageName,
+            /*dt.Rows.Add(new object[] { "0R_" + Packages[packageCode].current + "A", "210-000000A-01", "0R", "0.05", packageName,
                 "RES,SM," + packageName + ",0.05R MAX," + Packages[packageCode].current + "A,THICK_FILM,-55~" + ((packageName == "01005") ? "+125" : "+155") + "DEG(TJ),AEC-Q200",
                 "KOA Speer", "RK73Z" + packageCode + "T" + Packages[packageCode].pack,
                 "RESISTOR", @"Basic\Basic.SchLib", packageName + ((packageName == "0201" || packageName == "0402") ? "_GREEN" : string.Empty), @"Basic\Resistor.PcbLib",
-                "Ideal Simulation Data", "General", "Resistor", "X", string.Empty, "(1:1),(2:2)", string.Empty, "Ideal" });
+                "Ideal Simulation Data", "General", "Resistor", "X", string.Empty, "(1:1),(2:2)", string.Empty, "Ideal" });*/
             dt.AcceptChanges();
             return dt;
         }
 
-        public static Dictionary<string, DataTable> InitiateEmptyTables()
+        public static void InitiateEmptyTables()
         {
-            Dictionary<string, DataTable> ds = new Dictionary<string, DataTable>();
             foreach (string p in Packages.Keys)
             {
                 DataTable dt = InitiateEmptyTable(p);
-                ds.Add(dt.TableName, dt);
+                ComponentList.Accdb_Basic.Add(dt.TableName, dt);
             }
-            return ds;
         }
 
-        public static void RK73H_Generator(Dictionary<string, DataTable> ds)
+        public static Resistor GetResistor(string packageCode)
+        {
+            Resistor r = new Resistor()
+            {
+                VendorName = "KOA Speer",
+
+                Tolerance = 1,
+                Voltage = Packages[packageCode].voltage,
+                PackageName = Packages[packageCode].packageName,
+                PowerRating = Packages[packageCode].power,
+
+                TableName = "Resistor - " + Packages[packageCode].packageName,
+            };
+            r.Tags.Add("AEC-Q200");
+            return r;
+        }
+
+        public static void RK73H_Generator()
         {
             Dictionary<string, double> values = new Dictionary<string, double>();
 
             foreach (string p in Packages.Keys)
             {
-                Resistor r = new Resistor()
-                {
-                    VendorName = "KOA Speer",
-
-                    Tolerance = 1,
-                    Voltage = Packages[p].voltage,
-                    PackageName = Packages[p].pakageName,
-                    PowerRating = Packages[p].power,
-
-                    TableName = "Resistor - " + Packages[p].pakageName,
-                };
-                r.Tags.Add("AEC-Q200");
-
                 values.Clear();
+                string PackageName = Packages[p].packageName;
 
-                switch (r.PackageName)
+                ResistorZ rz = new ResistorZ(p);
+                ComponentList.Resistors.InsertCmp(rz);
+
+                switch (PackageName)
                 {
                     case ("01005"):
                         {
-                            r.TemperatureRange = new Range<double>(-55, 125);
-                            r.FootprintName = "01005";
+     
                             Decade.ValueGenerator(values, Decade.E24Values, new Range<double>(10, 2e6));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.TemperatureRange = new Range<double>(-55, 125);
+                                r.FootprintName = "01005";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
 
@@ -90,19 +98,19 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 250;
                                 }
-                                r.WriteToTable(ds);
-                                //Console.WriteLine(r.VendorPartNumber);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
                     case ("0201"):
                         {
-                            r.FootprintName = "0201";
                             Decade.ValueGenerator(values, Decade.E24Values, new Range<double>(1, 9.1));
                             Decade.ValueGenerator(values, Decade.E96Values, new Range<double>(10, 1e6 - 1));
                             Decade.ValueGenerator(values, Decade.E24Values, new Range<double>(1e6, 1e7));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.FootprintName = "0201";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
                                 if (r.Value >= 1 && r.Value < 10)
@@ -113,16 +121,17 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 200;
                                 }
-                                r.WriteToTable(ds);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
                     case ("0402"):
                         {
-                            r.FootprintName = r.PackageName + "_BLUE";
                             Decade.ValueGenerator(values, Decade.E96Values, new Range<double>(1, 1e7));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.FootprintName = r.PackageName + "_BLUE";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
                                 if (r.Value >= 1 && r.Value < 10)
@@ -137,16 +146,17 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 200;
                                 }
-                                r.WriteToTable(ds);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
                     case ("0603"):
                         {
-                            r.FootprintName = r.PackageName + "_BLUE";
                             Decade.ValueGenerator(values, Decade.E96Values, new Range<double>(1, 1e7));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.FootprintName = r.PackageName + "_BLUE";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
                                 if (r.Value >= 1 && r.Value < 10)
@@ -168,16 +178,17 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 200;
                                 }
-                                r.WriteToTable(ds);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
                     case ("0805"):
                         {
-                            r.FootprintName = r.PackageName + "_BLUE";
                             Decade.ValueGenerator(values, Decade.E96Values, new Range<double>(1, 1e7));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.FootprintName = r.PackageName + "_BLUE";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
                                 if (r.Value >= 1 && r.Value < 10)
@@ -192,7 +203,7 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 400;
                                 }
-                                r.WriteToTable(ds);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
@@ -201,10 +212,11 @@ namespace Xu.EE
                     case ("2010"):
                     case ("2512"):
                         {
-                            r.FootprintName = r.PackageName + "_BLUE";
                             Decade.ValueGenerator(values, Decade.E96Values, new Range<double>(1, 1e7));
                             foreach (string val in values.Keys)
                             {
+                                Resistor r = GetResistor(p);
+                                r.FootprintName = r.PackageName + "_BLUE";
                                 r.Value = values[val];
                                 r.VendorPartNumber = "RK73H" + p + "T" + Packages[p].pack + val + "F";
                                 if (r.Value >= 1 && r.Value < 10)
@@ -223,7 +235,7 @@ namespace Xu.EE
                                 {
                                     r.TemperatureCoefficient = 400;
                                 }
-                                r.WriteToTable(ds);
+                                ComponentList.Resistors.InsertCmp(r);
                             }
                         }
                         break;
@@ -231,9 +243,9 @@ namespace Xu.EE
             }
         }
 
-        public static readonly Dictionary<string, (string pakageName, string pack, double power, double voltage, double current)> Packages =
-            new Dictionary<string, (string pakageName, string pack, double power, double voltage, double current)>()
-        {
+        public static readonly Dictionary<string, (string packageName, string pack, double power, double voltage, double current)> Packages =
+            new Dictionary<string, (string packageName, string pack, double power, double voltage, double current)>()
+                {
                     { "1F", ("01005", "TBL", 0.03, 30, 0.5) },
                     { "1H", ("0201", "TC", 0.05, 50, 0.5) },
                     { "1E", ("0402", "TP", 0.1, 75, 1) },
@@ -243,8 +255,58 @@ namespace Xu.EE
                     { "2E", ("1210", "TD", 0.5, 200, 2) },
                     { "2H", ("2010", "TE", 0.75, 200, 2) },
                     { "3A", ("2512", "TE", 1, 200, 2) },
-        };
+                };
 
 
+    }
+
+    [Serializable, DataContract]
+    public class ResistorZ : Resistor
+    {
+        public ResistorZ(string packageCode)
+        {
+            Level = 210;
+            Variation = (1, string.Empty);
+
+            PackageName = KOASpeer.Packages[packageCode].packageName;
+            CurrentRating = KOASpeer.Packages[packageCode].current;
+
+            Value = 0;
+
+            Unit = string.Empty;
+            Tolerance = 1;
+
+            TemperatureRange = new Range<double>(-55, 155);
+
+            VendorName = "KOA Speer";
+            VendorPartNumber = "RK73Z" + packageCode + "T" + KOASpeer.Packages[packageCode].pack;
+
+            SymbolName = "RESISTOR";
+            SymbolPath = @"Basic\Basic.SchLib";
+
+            FootprintPath = @"Basic\Resistor.PcbLib";
+            FootprintName = PackageName + ((PackageName == "0201" || PackageName == "0402") ? "_GREEN" : string.Empty);
+
+            PackageName = KOASpeer.Packages[packageCode].packageName;
+            PowerRating = KOASpeer.Packages[packageCode].power;
+
+            TableName = "Resistor - " + KOASpeer.Packages[packageCode].packageName;
+
+            SimDescription = "Ideal Simulation Data";
+            SimKind = "General";
+            SimSubKind = "Resistor";
+            SimSpicePrefix = "X";
+            SimNetlist = string.Empty;
+            SimPortMap = "(1:1),(2:2)";
+            SimFile = string.Empty;
+            SimModel = "Ideal";
+        }
+
+        public override string Name => Comment + "_" + CurrentRating + "A";
+
+        public override string Description => "RES,SM," + PackageName + ",0.05R MAX," + CurrentRating + "A,THICK_FILM,-55~" + ((PackageName == "01005") ? "+125" : "+155") + "DEG(TJ),AEC-Q200";
+
+        [DataMember]
+        public double CurrentRating { get; set; } = -1;
     }
 }

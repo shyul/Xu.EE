@@ -33,6 +33,8 @@ namespace Xu.EE
         public Resistor()
         {
             Level = 210;
+            Variation = (1, string.Empty);
+
             Unit = string.Empty;
             Tolerance = 1;
 
@@ -69,6 +71,9 @@ namespace Xu.EE
         public override string Name => Comment + "_" + Tolerance.ToString("0.#") + "%";// _" + PowerRating + "W";
 
         [IgnoreDataMember]
+        public override string ToleranceDescription => Tolerance + "%";
+
+        [IgnoreDataMember]
         public override string Comment
         {
             get
@@ -81,7 +86,7 @@ namespace Xu.EE
         }
 
         [IgnoreDataMember]
-        public override string Description => ("RES," + MountType + "," + PackageName + "," + Comment.ToUpper() + "," + ToleranceDescription + "," +
+        public override string Description => ("RES," + MountType + "," + PackageName + "," + Comment.ToUpper() + ",±" + ToleranceDescription + "," +
             Voltage + "V," + PowerRating + "W,±" + TemperatureCoefficient.ToString() + "PPM/K," + ResistorType + "," +
             TemperatureRange.ToStringShort() + "DEG(" + TempRangeType + ")," + Tag.ToUpper()).Trim(',');
     }

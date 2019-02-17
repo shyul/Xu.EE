@@ -150,7 +150,7 @@ namespace Xu.EE
             Description, VendorName, VendorPartNumber, SymbolName, SymbolPath, FootprintName, FootprintPath,
             SimDescription, SimKind, SimSubKind, SimSpicePrefix, SimNetlist,
             SimPortMap, SimFile, SimModel, SimParameters };
-
+        /*
         public void WriteToTable(Dictionary<string, DataTable> ds)
         {
             if (!ds.Keys.Contains(TableName)) ds.Add(TableName, AccessDb.GetTable(TableName));
@@ -159,7 +159,11 @@ namespace Xu.EE
             {
                 dt.Rows.Add(DataRow);
             }
-        }
+        }*/
+
+        public override int GetHashCode() => VendorPartNumber.GetHashCode();
+        public override bool Equals(object obj) => obj.GetType() == GetType() && obj.GetHashCode() == GetHashCode();
+        public bool Equals(IGeneralItem other) => (VendorPartNumber == ((Component)other).VendorPartNumber);
     }
 
     /// <summary>
@@ -181,6 +185,6 @@ namespace Xu.EE
         public double Tolerance { get; set; } // In percentage, example: 10%
 
         [DataMember]
-        public string ToleranceDescription { get; set; } // "10%"
+        public virtual string ToleranceDescription { get; set; } // "10%"
     }
 }
