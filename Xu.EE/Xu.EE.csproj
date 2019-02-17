@@ -5,35 +5,36 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{8E093916-4398-48F8-A549-3D40378E46F2}</ProjectGuid>
-    <OutputType>WinExe</OutputType>
-    <RootNamespace>Combo</RootNamespace>
-    <AssemblyName>Combo</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Xu.EE</RootNamespace>
+    <AssemblyName>Xu.EE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\Library\Tools\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Library\Tools\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>Combo.Program</StartupObject>
+    <StartupObject>
+    </StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -50,21 +51,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AccessDB.cs" />
-    <Compile Include="AccessDB.Designer.cs">
-      <DependentUpon>AccessDB.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Components\ComponentList.cs" />
+    <Compile Include="Components\Vendors\AVX.cs" />
+    <Compile Include="Components\Vendors\Coilcraft.cs" />
+    <Compile Include="Components\Vendors\KOASpeer.cs" />
+    <Compile Include="Components\Vendors\Murata.cs" />
+    <Compile Include="Components\Vendors\TDK.cs" />
+    <Compile Include="Utility\AccessDB.cs" />
     <Compile Include="Components\Capacitor.cs" />
     <Compile Include="Components\Component.cs" />
     <Compile Include="Components\Resistor.cs" />
-    <Compile Include="Engineering\Converstion.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Utility\Converstion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -74,6 +71,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -86,12 +84,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\xu\xu.csproj">
+    <ProjectReference Include="..\..\Xu\Xu\Xu.csproj">
       <Project>{c405f46d-c5b1-4aff-a335-8bc0760770b9}</Project>
-      <Name>xu</Name>
+      <Name>Xu</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Combo
+namespace Xu.EE
 {
     public enum ResistanceUnit
     {
