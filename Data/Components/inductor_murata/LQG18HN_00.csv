@@ -1,0 +1,25 @@
+﻿Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	Multilayer",LQG18HN10NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",10nH,±5%,650mA,,0.30Ω,3500MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN12NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",12nH,±5%,600mA,,0.35Ω,3000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN15NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",15nH,±5%,600mA,,0.35Ω,2800MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN18NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",18nH,±5%,600mA,,0.37Ω,2600MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN1N2S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",1.2nH,±0.3nH,1100mA,,0.10Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN1N5S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",1.5nH,±0.3nH,1100mA,,0.10Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN1N8S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",1.8nH,±0.3nH,1100mA,,0.10Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN22NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",22nH,±5%,500mA,,0.50Ω,2300MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN27NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",27nH,±5%,500mA,,0.54Ω,2000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN2N2S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",2.2nH,±0.3nH,1100mA,,0.10Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN2N7S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",2.7nH,±0.3nH,1000mA,,0.12Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN33NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",33nH,±5%,500mA,,0.54Ω,1700MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN39NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",39nH,±5%,450mA,,0.60Ω,1500MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN3N3S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",3.3nH,±0.3nH,1000mA,,0.12Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN3N9S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",3.9nH,±0.3nH,900mA,,0.15Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN47NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",47nH,±5%,400mA,,0.70Ω,1200MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN4N7S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",4.7nH,±0.3nH,900mA,,0.15Ω,6000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN56NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",56nH,±5%,400mA,,0.75Ω,1100MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN5N6S00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",5.6nH,±0.3nH,800mA,,0.20Ω,5000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN68NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",68nH,±5%,400mA,,0.80Ω,1000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN6N8J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",6.8nH,±5%,800mA,,0.20Ω,5000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN82NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",82nH,±5%,350mA,,0.85Ω,900MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HN8N2J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",8.2nH,±5%,800mA,,0.20Ω,4000MHz,LQG18HN_00
+"In Production","General	85℃	Multilayer",LQG18HNR10J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",100nH,±5%,350mA,,0.90Ω,800MHz,LQG18HN_00

@@ -1,0 +1,25 @@
+﻿Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	Film",LQP18MN10NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",10nH,±2%,150mA,,1.0Ω,3400MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN12NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",12nH,±2%,150mA,,1.0Ω,3000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN15NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",15nH,±2%,150mA,,1.3Ω,2700MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN18NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",18nH,±2%,100mA,,1.5Ω,2300MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN1N3C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",1.3nH,±0.2nH,300mA,,0.3Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN1N5C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",1.5nH,±0.2nH,300mA,,0.3Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN1N8C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",1.8nH,±0.2nH,250mA,,0.4Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN22NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",22nH,±2%,100mA,,1.9Ω,2100MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN27NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",27nH,±2%,100mA,,2.4Ω,1900MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN2N2C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",2.2nH,±0.2nH,250mA,,0.4Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN2N7C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",2.7nH,±0.2nH,250mA,,0.4Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN33NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",33nH,±2%,100mA,,2.8Ω,1700MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN39NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",39nH,±2%,100mA,,2.8Ω,1400MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN3N3C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",3.3nH,±0.2nH,250mA,,0.4Ω,6000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN3N9C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",3.9nH,±0.2nH,200mA,,0.5Ω,5900MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN47NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",47nH,±2%,100mA,,2.2Ω,1200MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN4N7C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",4.7nH,±0.2nH,200mA,,0.5Ω,5200MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN56NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",56nH,±2%,50mA,,3.4Ω,1000MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN5N6C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",5.6nH,±0.2nH,200mA,,0.6Ω,4700MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN68NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",68nH,±2%,50mA,,3.5Ω,900MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN6N8C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",6.8nH,±0.2nH,200mA,,0.7Ω,4300MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN82NG02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",82nH,±2%,50mA,,4.6Ω,800MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MN8N2C02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",8.2nH,±0.2nH,150mA,,0.8Ω,3600MHz,LQP18MN_02
+"In Production","General	85℃	Film",LQP18MNR10G02#,"1.6 ±0.15mm","0.8 ±0.15mm","0.5 ±0.1mm","0603 (1608)",100nH,±2%,50mA,,6.1Ω,700MHz,LQP18MN_02

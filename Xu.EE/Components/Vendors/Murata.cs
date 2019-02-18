@@ -16,13 +16,13 @@ namespace Xu.EE
 {
     public static class Murata
     {
-        public static void ImportAll()
+        public static void ImportAll(string pathName)
         {
-            BuildPartNumberWithSim(@"C:\Users\shyul\OneDrive - Facebook\Projects\Altium\Library\Basic\Simulation\Murata");
+            BuildPartNumberWithSim(pathName + @"Library\Basic\Simulation\Murata\");
 
             //Dictionary<string, DataTable> ds = InitiateEmptyTables();
 
-            string filePath = @"C:\Users\shyul\OneDrive - Facebook\Projects\Altium\Tools\Components\capacitor_murata\";
+            string filePath = pathName + @"Data\Components\capacitor_murata\";
             string[] files = new string[] { "GRM", "GJM", "GQM", "GCM", "GCQ" };
 
             foreach (string file in files)
@@ -37,27 +37,6 @@ namespace Xu.EE
                     if (isValid)
                     {
                         ComponentList.Capacitors.InsertCmp(c);
-                        /*
-                        if (!ds.Keys.Contains(c.TableName)) ds.Add(c.TableName, AccessDb.GetTable(c.TableName));
-                        DataTable dt = ds[c.TableName];
-                        if (!dt.Rows.Contains(c.Name))
-                        {
-                            dt.Rows.Add(c.DataRow);
-                        }
-                        else
-                        {
-                            DataRow[] foundRows = dt.Select("[Component Name]='" + c.Name + "'");
-
-                            string l = mfrpn + ": ";
-
-                            foreach (DataRow fr in foundRows)
-                            {
-                                l += fr["Mfg PN"].ToString() + ", ";
-                            }
-
-                            Console.WriteLine(l);// + dt.Rows[c.Name]["Mfg PN"]);
-                        }
-                        */
                     }
                 }
             }

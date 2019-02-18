@@ -1,0 +1,36 @@
+﻿"Status : To be discontinued / Status : Discontinued / Status : In Production"
+Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	125℃	WoundFerrite",LQW15CN1R0M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",1000nH,±20%,270mA,,0.94Ω,120MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN1R5M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",1500nH,±20%,190mA,,1.50Ω,120MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN20NJ10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",20nH,±5%,2200mA,,0.028Ω,3000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN20NK10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",20nH,±10%,2200mA,,0.028Ω,3000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN2R2M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",2200nH,±20%,170mA,,1.80Ω,100MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN34NJ10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",34nH,±5%,1800mA,,0.036Ω,2500MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN34NK10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",34nH,±10%,1800mA,,0.036Ω,2500MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN3R3M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",3300nH,±20%,130mA,,3.65Ω,80MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN53NJ10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",53nH,±5%,1300mA,,0.06Ω,2000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN53NK10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",53nH,±10%,1300mA,,0.06Ω,2000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN77NJ10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",77nH,±5%,1100mA,,0.09Ω,2000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CN77NK10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",77nH,±10%,1100mA,,0.09Ω,2000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR11J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",106nH,±5%,850mA,,0.144Ω,1500MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR11K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",106nH,±10%,850mA,,0.144Ω,1500MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR14J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",140nH,±5%,650mA,,0.216Ω,1000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR14K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",140nH,±10%,650mA,,0.216Ω,1000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR18J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",180nH,±5%,560mA,,0.312Ω,1000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR18K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",180nH,±10%,560mA,,0.312Ω,1000MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR22J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",220nH,±5%,450mA,,0.47Ω,1400MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR22K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",220nH,±10%,450mA,,0.47Ω,1400MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR27J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",270nH,±5%,420mA,,0.52Ω,830MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR27K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",270nH,±10%,420mA,,0.52Ω,830MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR33J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",330nH,±5%,390mA,,0.56Ω,520MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR33K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",330nH,±10%,390mA,,0.56Ω,520MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR39J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",390nH,±5%,370mA,,0.62Ω,450MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR39K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",390nH,±10%,370mA,,0.62Ω,450MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR42J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",420nH,±5%,370mA,,0.62Ω,400MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR42K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",420nH,±10%,370mA,,0.62Ω,400MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR47J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",470nH,±5%,350mA,,0.66Ω,380MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR47K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",470nH,±10%,350mA,,0.66Ω,380MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR56J10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",560nH,±5%,300mA,,0.71Ω,300MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR56K10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",560nH,±10%,300mA,,0.71Ω,300MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR68M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",680nH,±20%,290mA,,0.78Ω,290MHz,LQW15CN_10
+"In Production","General	125℃	WoundFerrite",LQW15CNR82M10#,"1.0 ±0.1mm","0.6 ±0.05mm","0.5 ±0.1mm","0402 (1005)",820nH,±20%,275mA,,0.84Ω,200MHz,LQW15CN_10

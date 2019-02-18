@@ -1,0 +1,10 @@
+﻿"Status : To be discontinued / Status : Discontinued / Status : In Production"
+Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	125℃	WoundFerrite",LQW15CN18NJ00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",18nH,±5%,1400mA,,0.046Ω,3000MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CN33NJ00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",33nH,±5%,1300mA,,0.065Ω,1800MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CN48NJ00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",48nH,±5%,1100mA,,0.078Ω,1400MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CN70NJ00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",70nH,±5%,820mA,,0.12Ω,1300MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CN96NJ00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",96nH,±5%,730mA,,0.16Ω,1100MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CNR13J00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",130nH,±5%,640mA,,0.23Ω,1000MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CNR16J00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",160nH,±5%,480mA,,0.33Ω,900MHz,LQW15CN_00
+"In Production","General	125℃	WoundFerrite",LQW15CNR20J00#,"1.0 ±0.1mm","0.55 ±0.1mm","0.5 ±0.1mm","0402 (1005)",200nH,±5%,390mA,,0.47Ω,800MHz,LQW15CN_00

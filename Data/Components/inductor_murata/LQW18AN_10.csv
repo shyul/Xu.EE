@@ -1,0 +1,20 @@
+﻿Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN10NG10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",10nH,±2%,800mA,,0.058Ω,5000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN10NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",10nH,±5%,800mA,,0.058Ω,5000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN12NG10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",12nH,±2%,750mA,,0.071Ω,5000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN12NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",12nH,±5%,750mA,,0.071Ω,5000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN15NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",15nH,±5%,700mA,,0.085Ω,4500MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN18NG10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",18nH,±2%,700mA,,0.085Ω,3500MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN18NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",18nH,±5%,700mA,,0.085Ω,3500MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN22NG10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",22nH,±2%,640mA,,0.099Ω,3200MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN22NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",22nH,±5%,640mA,,0.099Ω,3200MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN27NG10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",27nH,±2%,590mA,,0.116Ω,2800MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN27NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",27nH,±5%,590mA,,0.116Ω,2800MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN2N2D10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",2.2nH,±0.5nH,1400mA,,0.018Ω,18000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN33NJ10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",33nH,±5%,550mA,,0.132Ω,2500MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN3N9C10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",3.9nH,±0.2nH,1000mA,,0.032Ω,11000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN3N9D10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",3.9nH,±0.5nH,1000mA,,0.032Ω,11000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN5N6D10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",5.6nH,±0.5nH,900mA,,0.045Ω,10000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN6N8C10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",6.8nH,±0.2nH,900mA,,0.045Ω,7000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN6N8D10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",6.8nH,±0.5nH,900mA,,0.045Ω,7000MHz,LQW18AN_10
+"In Production","General	125℃	WoundNonmag	Low Rdc	HiQtype",LQW18AN8N2D10#,"1.6 ±0.2mm","0.8 ±0.3mm","0.8 ±0.2mm","0603 (1608)",8.2nH,±0.5nH,800mA,,0.058Ω,7000MHz,LQW18AN_10

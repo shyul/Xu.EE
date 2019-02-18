@@ -1,0 +1,20 @@
+﻿"Status : To be discontinued / Status : Discontinued / Status : In Production"
+Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	WoundFerrite",LQH31HN54NK03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",54nH,±10%,920mA,,0.0455Ω,800MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HN95NK03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",95nH,±10%,790mA,,0.0611Ω,650MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR14J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",145nH,±5%,700mA,,0.0793Ω,500MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR14K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",145nH,±10%,700mA,,0.0793Ω,500MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR21J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",215nH,±5%,520mA,,0.143Ω,430MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR21K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",215nH,±10%,520mA,,0.143Ω,430MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR29J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",290nH,±5%,420mA,,0.221Ω,360MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR29K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",290nH,±10%,420mA,,0.221Ω,360MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR39J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",390nH,±5%,330mA,,0.338Ω,300MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR39K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",390nH,±10%,330mA,,0.338Ω,300MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR50J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",500nH,±5%,260mA,,0.572Ω,270MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR50K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",500nH,±10%,260mA,,0.572Ω,270MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR61J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",610nH,±5%,250mA,,0.624Ω,240MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR61K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",610nH,±10%,250mA,,0.624Ω,240MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR75J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",750nH,±5%,190mA,,1.027Ω,220MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR75K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",750nH,±10%,190mA,,1.027Ω,220MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR88J03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",880nH,±5%,180mA,,1.118Ω,200MHz,LQH31HN_03
+"In Production","General	85℃	WoundFerrite",LQH31HNR88K03#,"3.2 ±0.3mm","1.6 ±0.2mm","1.8 ±0.2mm","1206 (3216)",880nH,±10%,180mA,,1.118Ω,200MHz,LQH31HN_03

@@ -1,0 +1,4 @@
+﻿"Status : To be discontinued / Status : Discontinued / Status : In Production"
+Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	WoundFerrite",LQW15DN100M00#,"1.10 ±0.1mm","0.65 ±0.1mm","0.6 ±0.1mm","0402 (1005)",10μH,±20%,120mA,120mA,5.405Ω,20MHz,LQW15DN_00
+"In Production","General	85℃	WoundFerrite",LQW15DN150M00#,"1.10 ±0.1mm","0.65 ±0.1mm","0.6 ±0.1mm","0402 (1005)",15μH,±20%,100mA,100mA,6.555Ω,20MHz,LQW15DN_00

@@ -1,0 +1,13 @@
+﻿Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN10NJ13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",10nH,±5%,1320mA,,0.03Ω,3300MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN12NK13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",12nH,±10%,1100mA,,0.04Ω,3200MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN15NK13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",15nH,±10%,1000mA,,0.04Ω,3100MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN18NK13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",18.8nH,±10%,1000mA,,0.05Ω,2600MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN21NK13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",21nH,±10%,950mA,,0.05Ω,2200MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN27NK13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",27nH,±10%,900mA,,0.06Ω,1800MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN2N7D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",2.7nH,±0.5nH,1900mA,,0.02Ω,6000MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN3N1D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",3.1nH,±0.5nH,1800mA,,0.02Ω,6000MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN3N3D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",3.3nH,±0.5nH,1700mA,,0.02Ω,6000MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN5N6D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",5.6nH,±0.5nH,1500mA,,0.02Ω,6000MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN6N8D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",6.8nH,±0.5nH,1400mA,,0.02Ω,5400MHz,LQW2BHN_13
+"In Production","General	85℃	WoundNonmag	HiQtype",LQW2BHN8N6D13#,"2.0 ±0.2mm","1.5 ±0.2mm","1.7 +0.08/-0.1mm","0805 (2015)",8.6nH,±0.5nH,1300mA,,0.03Ω,3900MHz,LQW2BHN_13

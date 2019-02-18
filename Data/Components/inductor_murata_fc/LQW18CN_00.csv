@@ -1,0 +1,17 @@
+﻿"Status : To be discontinued / Status : Discontinued / Status : In Production"
+Status,Features,"Part number # indicates the package specification code.","L size","W size","T size","Size code inch (mm)",Inductance,"Inductance Tolerance","Rated Current (Itemp)","Rated Current (Isat)","Rdc (max.)","SRF (min.)",Series
+"In Production","General	85℃	WoundFerrite",LQW18CN15NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",15nH,±5%,2200mA,,0.025Ω,2000MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CN33NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",33nH,±5%,1700mA,,0.035Ω,1800MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CN4N9D00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",4.9nH,±0.5nH,2600mA,,0.015Ω,2300MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CN55NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",55nH,±5%,1500mA,,0.045Ω,1600MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CN85NJ00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",85nH,±5%,1400mA,,0.060Ω,1380MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR10K00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",100nH,±10%,1000mA,,0.10Ω,1260MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR12J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",120nH,±5%,1100mA,,0.085Ω,1200MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR16J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",160nH,±5%,1000mA,,0.10Ω,900MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR21J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",210nH,±5%,800mA,,0.15Ω,720MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR27J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",270nH,±5%,750mA,,0.16Ω,660MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR33J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",330nH,±5%,630mA,,0.25Ω,600MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR39J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",390nH,±5%,620mA,,0.28Ω,570MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR47J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",470nH,±5%,500mA,,0.45Ω,555MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR56J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",560nH,±5%,450mA,,0.48Ω,540MHz,LQW18CN_00
+"In Production","General	85℃	WoundFerrite",LQW18CNR65J00#,"1.6 ±0.15mm","0.8 ±0.15mm","0.8 ±0.15mm","0603 (1608)",650nH,±5%,430mA,,0.52Ω,510MHz,LQW18CN_00

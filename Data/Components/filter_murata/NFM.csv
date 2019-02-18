@@ -1,0 +1,80 @@
+﻿Status,Characteristic,Shape,"Part number (#:Packing code)","L size","W size","T size","Temperature   characteristics","Rated   voltage",Capacitance,"Tolerance   of   capacitance",Notes
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15CC222D1A3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,10Vdc,2200pF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15CC222D1C3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,16Vdc,2200pF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15CC223C1A3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,10Vdc,22000pF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15CC223C1C3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,16Vdc,22000pF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC104D0J3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,6.3Vdc,0.10μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC104R1A3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,10Vdc,0.10μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC105R0G3#,"1.0 ±0.05mm","0.5 ±0.1mm","0.3 ±0.05mm",,4Vdc,1.0μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC224D0J3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,6.3Vdc,0.22μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC224R1A3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,10Vdc,0.22μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC435R0E3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,2.5Vdc,4.3μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC473C1A3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,10Vdc,47000pF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC473C1C3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,16Vdc,47000pF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC474D0G3#,"1.0 ±0.05mm","0.5 ±0.1mm","0.3 ±0.05mm",,4Vdc,0.47μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC474R0J3#,"1.0 ±0.05mm","0.5 ±0.1mm","0.3 ±0.05mm",,6.3Vdc,0.47μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC755R0E3#,"1.0 ±0.2mm","0.5 ±0.15mm","0.5 ±0.15mm",,2.5Vdc,7.5μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC915R0E3#,"1.0 ±0.2mm","0.5 ±0.2mm","0.5 ±0.2mm",,2.5Vdc,9.1μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC101R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,100pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC102R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,1000pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC221R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,220pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC222R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,2200pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC223R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,22000pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18CC471R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,470pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC104R1C3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,16Vdc,0.10μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC105R0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.8 ±0.1mm",,6.3Vdc,1.0μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC224R0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,0.22μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC225B0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,2.2μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC225B1A3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.8 ±0.1mm",,10Vdc,2.2μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PC474R0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,0.47μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PS105D0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,1.0μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PS105R0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,1.0μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM18PS474R0J3#,"1.6 ±0.1mm","0.8 ±0.1mm","0.6 ±0.1mm",,6.3Vdc,0.47μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21CC102R1H3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,50Vdc,1000pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21CC221R1H3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,50Vdc,220pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21CC222R1H3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,50Vdc,2200pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21CC223R1H3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,50Vdc,22000pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21CC471R1H3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,50Vdc,470pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC104R1E3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,25Vdc,0.10μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC105B1A3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,10Vdc,1.0μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC105B1C3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,16Vdc,1.0μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC224R1C3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,16Vdc,0.22μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC225B0J3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,6.3Vdc,2.2μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC474R1C3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,16Vdc,0.47μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PC475B1A3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,10Vdc,4.7μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM21PS106B0J3#,"2.0 ±0.2mm","1.25 ±0.1mm","0.85 ±0.1mm",,6.3Vdc,10μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC103R1H3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,50Vdc,10000pF,±20%,Derating3
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC103R2A3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,100Vdc,10000pF,±20%,Derating3
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC104R1H3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,50Vdc,0.10μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC104R2A3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,100Vdc,0.10μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC153R1H3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,50Vdc,15000pF,±20%,Derating3
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC153R2A3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,100Vdc,15000pF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC223R1H3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,50Vdc,22000pF,±20%,Derating3
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31KC223R2A3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,100Vdc,22000pF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM31PC276B0J3#,"3.2 ±0.2mm","1.6 ±0.2mm","1.3 ±0.2mm",,6.3Vdc,27μF,±20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DCC102R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,1000pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DCC221R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,220pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DCC222R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,2200pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DCC223R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,22000pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DCC471R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,470pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM3DPC223R1H3#,"3.2 ±0.2mm","1.25 ±0.2mm","0.7 ±0.2mm",,50Vdc,22000pF,±20%,Derating3
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41CC102R2A3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,100Vdc,1000pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41CC222R2A3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,100Vdc,2200pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41CC223R2A3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,100Vdc,22000pF,+50/-20%,
+"In Production","General	Up to 125°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41CC471R2A3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,100Vdc,470pF,+50/-20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41PC155B1E3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,25Vdc,1.5μF,±20%,
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering	Flow soldering",SMD,NFM41PC155B1H3#,"4.5 ±0.3mm","1.6 ±0.3mm","1.0 ±0.2mm",,50Vdc,1.5μF,±20%,
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC105D0G3#,"1.0 ±0.05mm","0.5 ±0.1mm","0.3 ±0.05mm",,4Vdc,1.0μF,±20%,Derating1
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC105R0J3#,"1.0 ±0.05mm","0.5 ±0.1mm","0.3 ±0.05mm",,6.3Vdc,1.0μF,±20%,Derating1
+"In Production","Up to 85°C	General	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC146R0G3#,"1.0 ±0.15mm","0.5 ±0.15mm","0.5 ±0.15mm",,4Vdc,14μF,±20,"Derating1。
+Only for mobile devices"
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC435D0E3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,2.5Vdc,4.3μF,±20%,Derating1
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC435R0G3#,"1.0 ±0.1mm","0.5 ±0.2mm","0.4 ±0.1mm",,4Vdc,4.3μF,±20%,Derating1
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC755D0E3#,"1.0 ±0.2mm","0.5 ±0.15mm","0.5 ±0.15mm",,2.5Vdc,7.5μF,±20%,Derating1
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC755R0G3#,"1.0 ±0.2mm","0.5 ±0.15mm","0.5 ±0.15mm",,4Vdc,7.5μF,±20%,Derating1
+"In Production","General	Up to 105°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC915D0E3#,"1.0 ±0.2mm","0.5 ±0.2mm","0.5 ±0.2mm",,2.5Vdc,9.1μF,±20%,Derating1
+"In Production","General	Up to 85°C	Low inductance	EMIFIL	Reflow soldering",SMD,NFM15PC915R0G3#,"1.0 ±0.2mm","0.5 ±0.2mm","0.5 ±0.2mm",,4Vdc,9.1μF,±20%,Derating1
+"In Production","Up to 105°C	General	Low inductance	EMIFIL	Reflow soldering",SMD,NFMJMPC226D0E3#,"1.2 ±0.05mm","0.9 ±0.05mm","0.75 ±0.05mm",,2.5Vdc,22μF,±20%,"Derating1。
+Measure capacitance after heat treatment "
+"In Production","Up to 85°C	General	Low inductance	EMIFIL	Reflow soldering",SMD,NFMJMPC226R0G3#,"1.2 ±0.05mm","0.9 ±0.05mm","0.75 ±0.05mm",,4Vdc,22μF,±20%,"Derating1。
+Measure capacitance after heat treatment "
