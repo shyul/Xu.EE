@@ -85,10 +85,10 @@ namespace Xu.EE
                 return Value.ToString() + "nH";
             }
         }
-
+        /*
         [IgnoreDataMember]
         public override string Description => ("IND," + MountType + "," + PackageName + "," + Comment.ToUpper() + "," + ToleranceDescription + "," +
             Voltage + "V," + MaterialTempCode + "," + TemperatureRange.ToStringShort() + "DEG(" + TempRangeType + ")," + Tag.ToUpper()).Trim(',');
-
+            */
     }
 }

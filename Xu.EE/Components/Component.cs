@@ -30,7 +30,7 @@ namespace Xu.EE
     }
 
     [Serializable, DataContract]
-    public abstract class Component : IGeneralItem
+    public abstract class Component : IItem
     {
         [DataMember]
         public virtual string Name { get; set; }
@@ -163,7 +163,7 @@ namespace Xu.EE
 
         public override int GetHashCode() => VendorPartNumber.GetHashCode();
         public override bool Equals(object obj) => obj.GetType() == GetType() && obj.GetHashCode() == GetHashCode();
-        public bool Equals(IGeneralItem other) => (VendorPartNumber == ((Component)other).VendorPartNumber);
+        public bool Equals(IItem other) => (VendorPartNumber == ((Component)other).VendorPartNumber);
     }
 
     /// <summary>

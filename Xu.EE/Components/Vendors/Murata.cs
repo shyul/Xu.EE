@@ -50,7 +50,7 @@ namespace Xu.EE
 
             filePath = pathName + @"Data\Components\inductor_murata\";
 
-            FileInfo[] Files = UtilSerialization.GetFiles(filePath, "*.csv");
+            FileInfo[] Files = Xu.Serialization.GetFileList(filePath, "*.csv");
 
             foreach (FileInfo file in Files)
             {
@@ -131,7 +131,7 @@ namespace Xu.EE
 
         public static void BuildPartNumberWithSim(string dirPath)
         {
-            FileInfo[] Files = UtilSerialization.GetFiles(dirPath, "*.ckt");
+            FileInfo[] Files = Xu.Serialization.GetFileList(dirPath, "*.ckt");
             foreach (FileInfo file in Files)
             {
                 //Console.WriteLine(file.FullName); //file.Name;
@@ -272,7 +272,7 @@ namespace Xu.EE
             }
 
             c.TableName = "Capacitor - " + c.PackageName;
-            if (c.Tags.Count > 0) c.TableName += " - " + Util.ICollectionToString<string>(c.Tags, "/");
+            if (c.Tags.Count > 0) c.TableName += " - " + Xu.Collection.ToString<string>(c.Tags, "/");
 
             switch (tempCode)
             {
