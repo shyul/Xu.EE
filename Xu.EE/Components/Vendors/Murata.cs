@@ -48,7 +48,57 @@ namespace Xu.EE
             }
             Console.WriteLine("\n");
 
-            //AccessDb.WriteToFile(ds, fileName);
+            filePath = pathName + @"Data\Components\inductor_murata\";
+
+            FileInfo[] Files = UtilSerialization.GetFiles(filePath, "*.csv");
+
+            foreach (FileInfo file in Files)
+            {
+                Console.WriteLine(file.FullName); //file.Name;
+                DataTable csv = AccessDb.FromCsv(file.FullName);
+
+                //if(csv.Columns.Contains("Part number # indicates the package specification code#")) Console.Write(" ok. \n");
+                //else Console.Write(" error. \n");
+                //Console.Write(" Count: " + csv.Columns[2].ColumnName + "  \n");
+                /*
+                foreach(DataColumn dc in csv.Columns)
+                {
+                    Console.WriteLine(dc.ColumnName);
+                }*/
+
+                
+                foreach(DataRow dr in csv.Rows)
+                {
+                    string mfrpn = ((string)dr["Part number # indicates the package specification code#"]).Trim('#');
+                    string seriesType = ((string)dr["Series"]).Trim('#');
+                    string srf = (string)dr["SRF (min#)"];
+                    string rdc = (string)dr["Rdc (max#)"];
+                    //string Isat = (string)dr["Rated Current (Isat)"];
+                    string Itemp = (string)dr["Rated Current (Itemp)"];
+                    //string tolerance = (string)dr["Inductance Tolerance"];
+                    // inductance = (string)dr["Inductance"];
+
+                    (Inductor ind, bool isValid) = DecodeInductor(mfrpn);
+
+                    if (isValid)
+                    {
+
+
+
+
+                        ComponentList.Inductors.InsertCmp(ind);
+                    }
+
+
+
+
+
+
+
+                }
+
+            
+            }
         }
 
         public static HashSet<string> StandardPackages = new HashSet<string>()
@@ -77,7 +127,7 @@ namespace Xu.EE
 
         public static Dictionary<string, string> AllListPackSizes = new Dictionary<string, string>();
 
-        public static HashSet<string> AllListPartNumberWithSim = new HashSet<string>();
+        public static Dictionary<string, string> AllListPartNumberWithSim = new Dictionary<string, string>(); // PartNumber : FileName
 
         public static void BuildPartNumberWithSim(string dirPath)
         {
@@ -95,11 +145,81 @@ namespace Xu.EE
                         {
                             string[] vals = line.Split(' ');
                             //Console.WriteLine(vals[1]);
-                            AllListPartNumberWithSim.CheckAdd(vals[1]);
+                            AllListPartNumberWithSim.CheckAdd(vals[1], file.Name);
                         }
                     }
                 }
             }
+        }
+
+        public static (Inductor ind, bool isValid) DecodeInductor(string partNumber)
+        {
+            partNumber = partNumber.Trim('#');
+
+            string partcode = partNumber.Substring(0, 2); // *
+            string typecode = partNumber.Substring(2, 1); // *
+            string packageCode = partNumber.Substring(3, 2);
+            string appCode = partNumber.Substring(5, 1); // *
+            string catCode = partNumber.Substring(6, 1); // *
+            string valueCode = partNumber.Substring(7, 3);
+            string toleranceCode = partNumber.Substring(10, 1);
+
+            Inductor ind = new Inductor()
+            {
+                VendorName = "Murata",
+                VendorPartNumber = partNumber,
+                Value = FromValueCode3(valueCode, 'N'),
+                PackageName = FromPackageCode(packageCode),
+            };
+
+            bool isValid = true;
+
+            switch (toleranceCode)
+            {
+                case ("W"): ind.Tolerance = (100 * 0.05 / ind.Value); ind.ToleranceDescription = "±0.05nH"; break;
+                case ("B"): ind.Tolerance = (100 * 0.1 / ind.Value); ind.ToleranceDescription = "±0.1nH"; break;
+                case ("C"): ind.Tolerance = (100 * 0.2 / ind.Value); ind.ToleranceDescription = "±0.2nH"; break;
+                case ("S"): ind.Tolerance = (100 * 0.2 / ind.Value); ind.ToleranceDescription = "±0.3nH"; break;
+                case ("D"): ind.Tolerance = (100 * 0.5 / ind.Value); ind.ToleranceDescription = "±0.5nH"; break;
+
+                case ("F"): ind.Tolerance = 1; ind.ToleranceDescription = "±1%"; break;
+                case ("G"): ind.Tolerance = 2; ind.ToleranceDescription = "±2%"; break;
+                case ("H"): ind.Tolerance = 2; ind.ToleranceDescription = "±3%"; break;
+                case ("R"): ind.Tolerance = 2.5; ind.ToleranceDescription = "±2.5%"; break;
+                case ("J"): ind.Tolerance = 5; ind.ToleranceDescription = "±5%"; break;
+                case ("K"): ind.Tolerance = 10; ind.ToleranceDescription = "±10%"; break;
+                case ("M"): ind.Tolerance = 20; ind.ToleranceDescription = "±20%"; break;
+                default: throw new ArgumentException("Invalid Murata Part Number");
+            }
+
+            ind.FootprintName = ind.PackageName + "_" + partNumber.Substring(0, 5);
+
+            if (AllListPartNumberWithSim.ContainsKey(partNumber))
+            {
+                ind.SimDescription = "Vendor Simulation Data";
+                ind.SimKind = "General";
+                ind.SimSubKind = "Spice Subcircuit";
+                ind.SimSpicePrefix = "X";
+                ind.SimNetlist = "@DESIGNATOR %1 %2 @MODEL";
+                ind.SimPortMap = "(1:1),(2:2)";
+                //ind.SimFile = @"Basic\Simulation\Murata\" + typecode + ".ckt";
+                ind.SimFile = @"Basic\Simulation\Murata\" + AllListPartNumberWithSim[partNumber];
+                ind.SimModel = partNumber;
+                ind.SymbolName = "INDUCTOR_SIM";
+            }
+
+            switch (typecode)
+            {
+                case ("G"): ind.InductorType = InductorType.MULTILAYER; break;
+                case ("P"): ind.InductorType = InductorType.FILM; break;
+                case ("W"): ind.InductorType = InductorType.WIRE_WOUND; break;
+                case ("H"): ind.InductorType = InductorType.FERRITE_WIRE_WOUND; break;
+                default: return (ind, false);
+            }
+
+
+
+            return (ind, isValid);
         }
 
         public static (Capacitor c, bool isValid) DecodeCapacitor(string partNumber)
@@ -368,7 +488,7 @@ namespace Xu.EE
                 default: throw new ArgumentException("Invalid Murata Part Number");
             }
 
-            if (AllListPartNumberWithSim.Contains(partNumber))
+            if (AllListPartNumberWithSim.ContainsKey(partNumber))
             {
                 c.SimDescription = "Vendor Simulation Data";
                 c.SimKind = "General";
@@ -376,21 +496,10 @@ namespace Xu.EE
                 c.SimSpicePrefix = "X";
                 c.SimNetlist = "@DESIGNATOR %1 %2 @MODEL";
                 c.SimPortMap = "(1:1),(2:2)";
-                c.SimFile = @"Basic\Simulation\Murata\" + typecode + ".ckt";
+                //c.SimFile = @"Basic\Simulation\Murata\" + typecode + ".ckt";
+                c.SimFile = @"Basic\Simulation\Murata\" + AllListPartNumberWithSim[partNumber];
                 c.SimModel = partNumber;
                 c.SymbolName = "CAPACITOR_SIM";
-            }
-            else
-            {
-                c.SimDescription = "Ideal Simulation Data";
-                c.SimKind = "General";
-                c.SimSubKind = "Capacitor";
-                c.SimSpicePrefix = "X";
-                c.SimNetlist = string.Empty; // "@DESIGNATOR %1 %2 " + c.SimulationValue + " IC=0";
-                c.SimPortMap = "(1:1),(2:2)";
-                c.SimFile = string.Empty;
-                c.SimModel = "Ideal";
-                c.SymbolName = "CAPACITOR";
             }
 
             return (c, isValid);
@@ -410,6 +519,7 @@ namespace Xu.EE
                 case ("MD"): return "015008";
                 case ("0D"): return "015015";
                 case ("03"): return "0201";
+                case ("04"): return "03015";
                 case ("05"): return "0202";
                 case ("08"): return "0303";
                 case ("1U"): return "02404";
@@ -436,17 +546,17 @@ namespace Xu.EE
             }
         }
 
-        public static double FromValueCode3(string valueCode)
+        public static double FromValueCode3(string valueCode, char sep = 'R')
         {
             if (valueCode.Length != 3)
                 throw new ArgumentException("Value code has to be three digits");
             else
             {
-                if (valueCode[0] == 'R')
+                if (valueCode[0] == sep)
                 {
                     return valueCode.Substring(1, 2).ToDouble() / 100;
                 }
-                else if (valueCode[1] == 'R')
+                else if (valueCode[1] == sep)
                 {
                     return (valueCode.Substring(0, 1) + valueCode.Substring(2, 1)).ToDouble() / 10;
                 }

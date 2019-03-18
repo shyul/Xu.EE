@@ -17,7 +17,7 @@ namespace AltiumLib
 
             Console.WriteLine(LibPath);
 
-            KOASpeer.InitiateAll();
+            //KOASpeer.InitiateAll();
             Murata.ImportAll(LibPath);
             ComponentList.WriteToFile(LibPath + @"Library\Basic\Basic.accdb");
 

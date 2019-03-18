@@ -1,0 +1,4 @@
+﻿Value (uF),Tolerance %,Voltage Rated,Current Leakage (uA),ESR,Dissipation Factor %,Size,Temp Low,Temp High,Vendor Name,Vendor Partnumber,Series
+100,20,4,8,0.07,6,C,-55,125,AVX,NOSC107M004R0070,NOS
+68,20,6.3,8.2,0.2,6,C,-55,125,AVX,NOSC686M006S0200,NOS
+100,20,6.3,12,0.15,8,C,-55,125,AVX,NOSC107M006R0150,NOS

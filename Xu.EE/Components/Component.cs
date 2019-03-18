@@ -119,28 +119,28 @@ namespace Xu.EE
         public virtual string SimulationValue { get; set; }
 
         [DataMember]
-        public virtual string SimDescription { get; set; }
+        public virtual string SimDescription { get; set; } = "Ideal Simulation Data";
 
         [DataMember]
-        public virtual string SimKind { get; set; }
+        public virtual string SimKind { get; set; } = "General";
 
         [DataMember]
         public virtual string SimSubKind { get; set; }
 
         [DataMember]
-        public virtual string SimSpicePrefix { get; set; }
+        public virtual string SimSpicePrefix { get; set; } = "X";
 
         [DataMember]
-        public virtual string SimNetlist { get; set; }
+        public virtual string SimNetlist { get; set; } = string.Empty;
 
         [DataMember]
-        public virtual string SimPortMap { get; set; }
+        public virtual string SimPortMap { get; set; } = "(1:1),(2:2)";
 
         [DataMember]
-        public virtual string SimFile { get; set; }
+        public virtual string SimFile { get; set; } = string.Empty;
 
         [DataMember]
-        public virtual string SimModel { get; set; }
+        public virtual string SimModel { get; set; } = "Ideal";
 
         [DataMember]
         public virtual string SimParameters { get; set; }
